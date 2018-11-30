@@ -117,19 +117,6 @@
 				</executions>
 			</plugin>
 
-			<!-- Maven Release plugin. -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>${version.plugin.release}</version>
-				<configuration>
-					<localCheckout>true</localCheckout>
-					<pushChanges>false</pushChanges>
-					<mavenExecutorId>forked-path</mavenExecutorId>
-					<arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
-				</configuration>
-			</plugin>
-
 			<!-- Maven Source plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
